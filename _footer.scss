@@ -1,0 +1,248 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+@use '../base/base' as *;
+
+.footer {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+    border-top: 0.1rem solid #d40dca;
+  }
+  @media (max-width: 1000px) {
+    .footer {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .footer-nav-heading {
+    font-size: 2.5rem;
+    color: #d40dca;
+  }
+  .footer-nav-item {
+    list-style: none;
+    margin: 1rem 0;
+  }
+  .footer-nav-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #999;
+    transition: color 0.2s;
+  }
+  .footer-nav-link:hover {
+    color: #999;
+  }
+  
+  .contact-list-heading {
+    font-size: 2.5rem;
+    color: #ddd;
+  }
+  .contact-list-item {
+    list-style: none;
+    margin: 1rem 0;
+  }
+  .contact-list-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #999;
+    transition: color 0.2s;
+  }
+  .contact-list-link:hover {
+    color: #999;
+  }
+  
+  @media (max-width: 1000px) {
+    .contact {
+      padding: 0 10rem;
+      order: 1;
+      margin-top: 4rem;
+    }
+  }
+  .contact-heading {
+    font-size: 3rem;
+    color: #d40dca;
+    text-align: center;
+  }
+  @media (max-width: 760px) {
+    .contact-heading {
+      font-size: 2.5rem;
+    }
+  }
+  .contact-paragraph {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  @media (max-width: 760px) {
+    .contact-paragraph {
+      font-size: 2rem;
+    }
+  }
+  .contact .inputs-group {
+    display: flex;
+    justify-content: center;
+  }
+  .contact .inputs-group input {
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 1rem 0.5rem;
+    border: 0.1rem solid #fff;
+    border-radius: 0.3rem;
+    outline: none;
+    transition: border 0.5s;
+  }
+  .contact .inputs-group input:focus:not([type=submit]) {
+    border: 0.1rem solid #999;
+  }
+  .contact .inputs-group-text {
+    width: 50%;
+  }
+  .contact .inputs-group-email {
+    width: 60%;
+  }
+  .contact .inputs-group-btn {
+    width: 40%;
+    color: #ffe;
+    background-color: #666666;
+    transition: background-color 0.2s;
+  }
+  .contact .inputs-group-btn:hover {
+    background-color: #d40dca;
+  }
+  .contact .social-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .contact .social-icons-item {
+    list-style: none;
+  }
+  .contact .social-icons-link {
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    border: 0.1rem solid #d40dca;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 560px) {
+    .contact .social-icons-link {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  .contact .social-icons-link i {
+    font-size: 2rem;
+  }
+  @media (max-width: 560px) {
+    .contact .social-icons-link i {
+      font-size: 1.8rem;
+    }
+  }
+  
+  .social-icons-item:nth-child(1) .social-icons-link {
+    color: #3b5998;
+    border: 0.1rem solid #3b5998;
+  }
+  
+  .social-icons-item:nth-child(2) .social-icons-link {
+    color: #b31217;
+    border: 0.1rem solid #b31217;
+  }
+  
+  .social-icons-item:nth-child(3) .social-icons-link {
+    color: #dc4e41;
+    border: 0.1rem solid #dc4e41;
+  }
+  
+  .social-icons-item:nth-child(4) .social-icons-link {
+    color: #55acee;
+    border: 0.1rem solid #55acee;
+  }
+  
+  .social-icons-item:nth-child(5) .social-icons-link {
+    color: #517fa4;
+    border: 0.1rem solid #517fa4;
+  }
+  
+  .social-icons-item:nth-child(6) .social-icons-link {
+    color: #0077b5;
+    border: 0.1rem solid #0077b5;
+  }
+  /* =============================== */
+/* PROMO SIGNUP FORM STYLES */
+/* =============================== */
+
+.promo-signup {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 500px;
+  
+}
+
+.promo-signup h2 {
+  font-size: 22px;
+  color: #d40dca;
+  margin-bottom: 10px;
+}
+
+.promo-signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-signup input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.promo-signup input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.promo-signup input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.promo-signup button {
+  background-color: #d40dca;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.promo-signup button:hover {
+  background-color: #b30aa5;
+}
+
+  
+
+
+
+
+
+

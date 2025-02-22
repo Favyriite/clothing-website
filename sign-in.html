@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Signup Popup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>  
+<body>
+  <!-- Trigger to open the popup -->
+  <button onclick="openPopup()">Login / Signup</button>
+  <button onclick="goHome()">Back to Home</button>
+  <!-- The Popup Modal -->
+  <div id="popupModal" class="popup-modal">
+    <div class="popup-content">
+      <!-- Close button -->
+      <span id="closeBtn" class="close-btn">&times;</span>
+      
+      <div id="form-container">
+        <!-- Login Form -->
+        <div id="loginForm" class="form-container">
+          <h2>Login</h2>
+          <form id="login">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+          </form>
+          <p>Don't have an account? <span id="toSignup">Signup</span></p>
+        </div>
+        
+        <!-- Signup Form -->
+        <div id="signupForm" class="form-container hidden">
+          <h2>Signup</h2>
+          <form id="signup">
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button type="submit">Signup</button>
+          </form>
+          <p>Already have an account? <span id="toLogin">Login</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

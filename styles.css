@@ -1,0 +1,120 @@
+/* General body and layout styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Popup Modal Styling */
+  .popup-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #101010;  /* Dark background for the popup */
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px;  /* Larger width for the popup */
+    max-width: 90%;  /* Allow resizing on smaller screens */
+    text-align: center;
+    color: white;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Close Button Styling */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Form container styling */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Form header */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  /* Input field styling */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;  /* Ensure input fields take full width */
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    border: 2px solid #ddd;  /* Gray border for inputs */
+    border-radius: 25px;  /* Rounded edges for inputs */
+    outline: none;  /* Remove default outline */
+    background-color: #222;  /* Dark background for inputs */
+    color: white;  /* White text color for inputs */
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #d4a;  /* Change border color to purple when focused */
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d4a;  /* Purple button */
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 25px;  /* Rounded edges for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #b38a;  /* Darker purple when hovered */
+  }
+  
+  /* Text and links */
+  p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+  }
+  
+  a {
+    color: #d4a;  /* Purple color for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #b38a;  /* Darker purple for link hover */
+  }
+  
+  /* Hidden form toggle */
+  .hidden {
+    display: none;  /* Hide the element with this class */
+  }
+  
+  

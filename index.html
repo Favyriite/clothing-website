@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="logo image.png">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Sans:300,400,600" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="dist/main.css" />
+    <title>Favour's stiches</title>
+    <style>
+       
+    </style>  
+  </head>
+  <body>
+    <div id="authContainer" class="auth-container">
+        <div class="auth-form">
+          <div class="form-toggle">
+            <button class="active" onclick="showForm('signin')">Sign In</button>
+            <button onclick="showForm('signup')">Sign Up</button>
+          </div>
+          
+          <form id="signinForm" onsubmit="handleSignIn(event)">
+            <h2>Sign In</h2>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+          </form>
+  
+          <form id="signupForm" class="hidden" onsubmit="handleSignUp(event)">
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="container">
+        <!--header-->
+          <header class="header">
+              <div class="logo">
+                  <img src="logo image.png" class="logo-img">
+              </div>
+              
+              <nav class="first-nav">
+                  <ul class="first-nav-list">
+                      <li class="first-nav-item">
+                          <a href="#" class="first-nav-link">
+                              <i class="fas fa-search"></i>
+                               Search
+                          </a>
+                      </li>
+                      <li class="first-nav-item">
+                          <a href="#" class="first-nav-link">
+                               Contact Us
+                          </a>
+                      </li>
+                      <li class="first-nav-item">
+                          <a href="#" id="auth-form" class="first-nav-link">
+                            SignIn/SignUp
+                          </a>
+                      </li>
+                      <li class="first-nav-item">
+                          <a href="#" class="first-nav-link">
+                              <i class="fas fa-shopping-cart"></i>
+                              <span id="cart-count"></span>  
+                          </a>
+                          <li class="second-nav-item">
+                            <a href="#about" class="second-nav-link">
+                              About Us
+                            </a>
+                          </li>
+                          <li class="second-nav-item">
+                            <a href="#team" class="second-nav-link">
+                              Our Team
+                            </a>
+                          </li>
+                          
+                      </li>
+                  </ul>
+              </nav>
+              <div class="heading">
+                  <h1 class="heading-text">Favour's Stiches</h1>
+              </div>
+              
+              <nav class="second-nav">
+                  <ul class="second-nav-list">
+                      <li class="second-nav-item">
+                          <a href="#" class="second-nav-link">
+                              Gallery
+                          </a>
+                      </li>
+                      <li class="second-nav-item dropdown-li">
+                          <a href="#" class="second-nav-link">
+                              Gift Ideas
+                          </a>
+                          <ul class="dropdown">
+                              <li class="dropdown-item">
+                                  <a href="#" class="dropdown-link">
+                                      Under $25
+                                  </a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="#" class="dropdown-link">
+                                      $25 - $50
+                                  </a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="#" class="dropdown-link">
+                                      Above $50
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="second-nav-item">
+                          <a href="#" class="second-nav-link">
+                              About Us
+                          </a>
+                      </li>
+                      <li class="second-nav-item">
+                          <a href="#" class="second-nav-link">
+                              Our Team
+                          </a>
+                      </li>
+                      <li class="second-nav-item">
+                          <a href="#" class="second-nav-link">
+                              discounts
+                          </a>
+                      </li>
+                  </ul>
+              </nav>
+          </header>
+        <!--end of header-->  
+
+        <!--slideshow-->
+        <section class="slideshow">
+            <div class="slideshow-slide">
+                <div class="slideshow-content">
+                    <h2>Gallery</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta unde beatae ratione quos cupiditate ullam quas nam, incidunt quia qui?</p>
+                </div>
+                <img src="images/slide show 1.jpg">
+            </div>
+            <div class="slideshow-slide">
+                <div class="slideshow-content">
+                    <h2>Hot on Sale</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta unde beatae ratione quos cupiditate ullam quas nam, incidunt quia qui?</p>
+                </div>
+                <img src="images/slideshow2.jpg">
+            </div>
+            <div class="slideshow-slide">
+                <div class="slideshow-content">
+                    <h2>Hot on Sale</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta unde beatae ratione quos cupiditate ullam quas nam, incidunt quia qui?</p>
+                </div>
+                <img src="images/slideshow 3.jpg">
+            </div>
+            <div class="slideshow-slide">
+                <div class="slideshow-content">
+                    <h2>Hot on Sale</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta unde beatae ratione quos cupiditate ullam quas nam, incidunt quia qui?</p>
+                </div>
+                <img src="images/female dresses.jpg">
+            </div>
+            <div class="slideshow-slide">
+                <div class="slideshow-content">
+                    <h2>Hot on Sale</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta unde beatae ratione quos cupiditate ullam quas nam, incidunt quia qui?</p>
+                </div>
+                <img src="images/femaleshirt.jpg">
+            </div>
+        </section>
+        <!--end of slideshow-->
+        
+        <!--products-->
+        <section class="products">
+            <div class="products-heading">
+                <h1 class="products-heading-text">Special Stiches</h1>
+            </div>
+            
+            <div class="products-wrapper">
+                <div class="product">
+                    <img src="images/product1.png" class="product-img">
+                    <div class="product-description">
+                        <h2 class="product-description-heading">
+                            Dress
+                        </h2>
+                        <p class="product-description-price">
+                            Price: <span>$150</span>
+                        </p>
+                        <button class="add-to-cart" data-product="Dress">Add to Cart</button>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product2.png" class="product-img">
+                    <div class="product-description">
+                        <h2 class="product-description-heading">
+                            trousers
+                        </h2>
+                        <p class="product-description-price">
+                            Price: <span>$100</span>
+                        </p>
+                        <button class="add-to-cart" data-product="Trousers">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product3.png" class="product-img">
+                    <div class="product-description">
+                        <h2 class="product-description-heading">
+                            Shirt
+                        </h2>
+                        <p class="product-description-price">
+                            Price: <span>$50</span>
+                        </p>
+                        <button class="add-to-cart" data-product="Shirt">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-btn">
+                <a href="#" class="btn">
+                    <div class="btn-bg"></div>
+                    <div class="arrow">
+                        <div class="arrow-line arrow-line-1"></div>
+                        <div class="arrow-line arrow-line-2"></div>
+                        <div class="arrow-line arrow-line-3"></div>
+                    </div>
+                    <span class="btn-text">See More</span>
+                </a>
+            </div>
+        </section>
+        <!-- end of products-->
+
+            <!--footer-->
+            <footer class="footer">
+                <div class="footer-nav-wrapper">
+                    <h3 class="footer-nav-heading">
+                        More Info
+                    </h3>
+                    <ul class="footer-nav">
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">
+                                Location
+                            </a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">
+                                special requests
+                            </a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">
+                                delivery
+                            </a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact">
+                    <ul class="social-icons">
+                        <li class="social-icons-item">
+                            <a href="#" class="social-icons-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-icons-item">
+                            <a href="#" class="social-icons-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social-icons-item">
+                            <a href="#" class="social-icons-link">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li class="social-icons-item">
+                            <a href="#" class="social-icons-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-icons-item">
+                            <a href="#" class="social-icons-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="social-icons-item">
+                            <a href="#" class="social-icons-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact-list-wrapper">
+                    <h3 class="contact-list-heading">
+                        Favour's Stiches
+                    </h3>
+                    <ul class="contact-list">
+                        <li class="contact-list-item">
+                            <a href="#" class="contact-list-link">
+                                +2347053237401
+                            </a>
+                        </li>
+                        <li class="contact-list-item">
+                            <a href="#" class="contact-list-link">
+                                favouruzoyibo@gmail.com
+                            </a>
+                        </li>
+                        <li class="contact-list-item">
+                            <a href="#" class="contact-list-link">
+                                UNIVERSITY OF NIGERIA, NSUKKA
+                            </a>
+                        </li>
+                        <li class="contact-list-item">
+                            <a href="#" class="contact-list-link">
+                                Free Delivery Within the Campus
+                            </a>
+                        </li>
+                    </ul>
+                </div>    
+            </footer>
+             <!--end of footer-->
+        
+    <script>
+        // Auth functionality
+        let currentUser = null;
+  
+        function showForm(formType) {
+          document.querySelectorAll('.form-toggle button').forEach(btn => 
+            btn.classList.remove('active'));
+          document.getElementById('signinForm').classList.add('hidden');
+          document.getElementById('signupForm').classList.add('hidden');
+          
+          if(formType === 'signin') {
+            document.querySelector('.form-toggle button:first-child').classList.add('active');
+            document.getElementById('signinForm').classList.remove('hidden');
+          } else {
+            document.querySelector('.form-toggle button:last-child').classList.add('active');
+            document.getElementById('signupForm').classList.remove('hidden');
+          }
+        }
+        function handleAuthSuccess() {
+        document.getElementById('authContainer').classList.add('hidden');
+        document.querySelector('.container').classList.remove('hidden');
+        updateAuthLink();
+      }
+      if(currentUser) {
+        const userNameElements = document.querySelectorAll('.user-name');
+        userNameElements.forEach(element => {
+            element.textContent = currentUser.name;
+        });
+    }
+
+      async function handleSignIn(e) {
+    e.preventDefault();
+    const email = e.target[0].value;
+    const password = e.target[1].value;
+
+    try {
+        const response = await fetch('http://localhost:5500/api/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password })
+        });
+
+        if (!response.ok) throw new Error(await response.text());
+        
+        const data = await response.json();
+        currentUser = data.user;
+        localStorage.setItem('authToken', data.token);
+        handleAuthSuccess();
+    } catch (error) {
+        alert(error.message);
+    }
+}
+
+async function handleSignUp(e) {
+    e.preventDefault();
+    const name = e.target[0].value;
+    const email = e.target[1].value;
+    const password = e.target[2].value;
+
+    try {
+        const response = await fetch('http://localhost:5500/api/register', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, password })
+        });
+
+        if (!response.ok) throw new Error(await response.text());
+        
+        alert('Registration successful! Please sign in.');
+        showForm('signin');
+    } catch (error) {
+        alert(error.message);
+    }
+}
+      function updateAuthLink() {
+        const authLink = document.getElementById('auth-form');
+        if(currentUser) {
+          authLink.textContent = 'Sign Out';
+          authLink.onclick = handleSignOut;
+        } else {
+          authLink.textContent = 'Sign In/Sign Up';
+          authLink.onclick = () => {
+            document.getElementById('authContainer').classList.remove('hidden');
+            document.querySelector('.container').classList.add('hidden');
+          };
+        }
+      }
+
+      function handleSignOut() {
+        currentUser = null;
+        localStorage.removeItem('currentUser');
+        document.getElementById('authContainer').classList.remove('hidden');
+        document.querySelector('.container').classList.add('hidden');
+        updateAuthLink();
+      }
+
+      // Check auth status on load
+      window.onload = () => {
+        currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        if(currentUser) {
+          document.getElementById('authContainer').classList.add('hidden');
+          document.querySelector('.container').classList.remove('hidden');
+        }
+        updateAuthLink();
+        
+        // Add click handler for auth link
+        document.getElementById('auth-form').addEventListener('click', (e) => {
+          if(currentUser) handleSignOut();
+        });
+      };
+    </script>
+          <script src="auth.js"></script>
+        <script src="cart.js"></script>
+
+      </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
